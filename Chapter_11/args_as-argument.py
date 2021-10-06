@@ -1,10 +1,10 @@
-#*args with normal parameters
-
 def multiply_nums(*args):
     multiply = 1
+    print(args)
     for i in args:
         multiply *=i
     return multiply
 
-print(multiply_nums(1,2,3,4,5))    
+nums = [2,3,4]
+print(multiply_nums(*nums)) #* unpacks the list/tuple 
 
